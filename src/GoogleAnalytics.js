@@ -1,11 +1,4 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-// src/GoogleAnalytics.js
-=======
->>>>>>> cf7dcfdbb4637e88d8623b64aef40cab8535913a
->>>>>>> bb07643 (Clean reset: Reinitialize project)
-import React, { useEffect } from 'react';
+import React from 'react' ;
 import { useLocation } from 'react-router-dom';
 
 const GA_TRACKING_ID = process.env.REACT_APP_GA_TRACKING_ID || 'G-XXXXXXXXXX';
