@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+// src/GoogleAnalytics.js
+=======
+>>>>>>> cf7dcfdbb4637e88d8623b64aef40cab8535913a
+>>>>>>> bb07643 (Clean reset: Reinitialize project)
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
@@ -22,11 +29,25 @@ const SEO = ({ title, description }) => {
     document.title = title || 'Pokémon Card Tracker';
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+      metaDescription.setAttribute('content', description || 'Track Pokémon card prices.');
+    } else {
+      const meta = document.createElement('meta');
+      meta.name = 'description';
+      meta.content = description || 'Track Pokémon card prices.';
+=======
+>>>>>>> bb07643 (Clean reset: Reinitialize project)
       metaDescription.setAttribute('content', description || 'Track real-time Pokémon card prices from multiple sources like eBay, TCGPlayer, and PokeDATA.');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
       meta.content = description || 'Track real-time Pokémon card prices from multiple sources.';
+<<<<<<< HEAD
+=======
+>>>>>>> cf7dcfdbb4637e88d8623b64aef40cab8535913a
+>>>>>>> bb07643 (Clean reset: Reinitialize project)
       document.head.appendChild(meta);
     }
   }, [title, description]);
